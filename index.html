@@ -4,6 +4,7 @@
     <meta charset="UTF-8" >
 
     <title>主页面</title>
+
     <style type="text/css">
         body{
 
@@ -62,17 +63,23 @@
 </head>
 
 <body >
+<script>
+    wid=document.documentElement.clientWidth;
+    hei=document.documentElement.clientHeight;
+    Wid=1920/wid;
+    Hei=1080/hei;
+</script>
 <div id="pic01">
-    <img src="image/1.jpg" style="width: 100%">
+    <img src="image/1.jpg" style="height:100%;width: 100%">
 </div>
-<div id="pic02" style="width: 100%">
-    <img src="image/2.jpg">
+<div id="pic02" >
+    <img src="image/2.jpg"style="height:100%;width: 100%">
 </div>
-<div id="pic03" style="width: 100%">
-    <img src="image/3.jpg">
+<div id="pic03">
+    <img src="image/3.jpg" style="height:100%;width: 100%">
 </div>
-<div id="pic04" style="width: 100%">
-    <img src="image/4.jpg">
+<div id="pic04" >
+    <img src="image/4.jpg"style="height:100%;width: 100%">
 </div>
 
 <input type="date" style="position: absolute;left: 45%;bottom: 35%">
