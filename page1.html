@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var thisURL = document.URL;
+        var  getval =thisURL.split('?')[1];
+        var showval= getval.split("=")[1];
+        function  showvalf(){
+            if(showval=="1"){
+                document.getElementById('ee').value="系统管理员";
+            }
+            if(showval=="2"){
+                document.getElementById('ee').value="员工";
+            }
+        }
+    </script>
+</head>
+<body onload="showvalf()">
+<div id="a" style="position: absolute;left: 25%;top: 25%;width: 5%;height:8.5%;">
+  <img src="image/1.jpg" style="width: 100%;height: 100%">
+</div>
+<p style="position: absolute;left: 26.5%;top: 32%">东方</p>
+<div id="b" style="position: absolute;left: 41%;top: 25%;width: 5%;height:8.5%;">
+    <img src="image/2.jpg" style="width: 100%;height: 100%">
+</div>
+<div id="c" style="position: absolute;left: 57%;top: 25%;width: 5%;height:8.5%;">
+    <img src="image/3.jpg" style="width: 100%;height: 100%">
+</div>
+<embed src="image/1.swf"></embed>
+<p style="position: absolute;left: 40%;bottom:29%">获取值</p>><input type="text" id="ee" style="position: absolute; left: 45%;bottom: 30%">
+<a href="index.html"><input type="button" value="返回" style="position: absolute;left: 48%;bottom: 24%"></a>
+</body>
+</html>
