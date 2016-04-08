@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=100">
+    <title>主页面</title>
+    <style type="text/css">
+    </style>
+</head>
+
+<body background="image/beerlight.png" style="background-repeat: no-repeat">
+<input type="date" style="position: absolute;left: 45%;bottom: 35%">
+<select id="se" style="position: absolute; left: 45%;bottom: 30%">
+<option value="1">系统管理员</option>
+<option value="2">员工</option>
+</select>
+
+<input value="登录" type="button" onclick="showMsg()" style="position: absolute;left: 45%;bottom: 20%;">
+<input value="取消" type="button" onclick="" style="position: absolute;left: 48%;bottom: 20%;">
+<input type="file">
+<script>
+    function showMsg(){
+    var objs=document.getElementById("se");
+    var p=objs.options[objs.selectedIndex].value;
+        if(p=="1"){ location.href = ("page1.html?p="+p)}
+        if(p=="2"){location.href = ("page1.html?p="+p)}
+
+    }
+</script>
+</body>
+</html>
