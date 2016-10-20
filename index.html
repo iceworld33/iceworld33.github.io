@@ -26,9 +26,6 @@
 </head>
 
 <body>
-<div id="info">
-    <a href="http://threejs.org" target="_blank">three.js</a> - OBJMTLLoader test
-</div>
 
 <script src="build/three.min.js"></script>
 
@@ -79,7 +76,7 @@
         //THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 
         var loader = new THREE.OBJMTLLoader();
-        loader.load( '4/male02.obj', '4/male02.mtl', function ( object ) {
+        loader.load( '3/jjj.obj', '3/jjj.mtl', function ( object ) {
             box = new THREE.Box3().setFromObject(object);
             t1=box.max.x+box.min.x;
             t2=box.max.y+box.min.y;
@@ -121,7 +118,7 @@
             controls = new THREE.OrbitControls(camera );
 
             controls.rotateSpeed = 3.0;
-            controls.zoomSpeed = 5;
+            controls.zoomSpeed = 3;
             controls.panSpeed = 2;
 
             controls.noZoom = false;
