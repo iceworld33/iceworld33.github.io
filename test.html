@@ -92,7 +92,7 @@
         // model
 
         var loader = new THREE.OBJLoader( manager );
-        loader.load( '1/cup.obj', function ( object ) {
+        loader.load( '4/male02.obj', function ( object ) {
             box = new THREE.Box3().setFromObject(object);
             t1=box.max.x+box.min.x;
             t2=box.max.y+box.min.y;
